@@ -213,6 +213,7 @@ fun UnlockedManagedProfileUI(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .fillMaxWidth()
+                .weight(1f, fill = false)
                 .verticalScroll(scrollState)
         ) {
             apps.forEach { app ->
